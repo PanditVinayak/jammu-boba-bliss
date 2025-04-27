@@ -93,7 +93,11 @@
   }
 
   body {
-    @apply bg-background text-foreground font-poppins;
+    @apply bg-background text-foreground font-poppins scroll-smooth;
+  }
+
+  ::selection {
+    @apply bg-boba-primary/20 text-boba-primary;
   }
 }
 
@@ -108,5 +112,19 @@
   
   .gradient-heading {
     @apply bg-gradient-to-r from-boba-primary to-boba-secondary bg-clip-text text-transparent;
+  }
+
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-0.5 
+           after:bg-boba-primary after:scale-x-0 after:origin-right after:transition-transform 
+           hover:after:scale-x-100 hover:after:origin-left;
+  }
+
+  .button-bounce {
+    @apply animate-bounce-gentle;
   }
 }

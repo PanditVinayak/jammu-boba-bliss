@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
-              <span className="font-pacifico text-2xl text-boba-primary">Jammu Boba Bliss</span>
+              <span className="font-pacifico text-2xl text-boba-primary">Boba Bliss</span>
             </Link>
           </div>
           
@@ -61,7 +61,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu, show/hide based on menu state */}
+      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
